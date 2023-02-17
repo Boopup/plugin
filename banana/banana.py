@@ -10,7 +10,7 @@ class Banana(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self, message):
         if "@HERE" in message.content.upper():
-            await message.add_reaction("\N{BANANA}")
+            await message.add_reaction("\N{ANGRY}")
 
 
 async def setup(bot):
