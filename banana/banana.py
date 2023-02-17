@@ -9,8 +9,8 @@ class Banana(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if "APPLE" in message.content.upper():
-            await message.add_reaction("\N{APPLE}")
+        if "@HERE" or "@EVERYONE" or "<@&972620190456115270>" in message.content.upper():
+            await message.add_reaction("\N{RAGE}")
 
 
 async def setup(bot):
